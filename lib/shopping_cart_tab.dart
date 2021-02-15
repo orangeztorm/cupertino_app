@@ -17,7 +17,7 @@ class _ShoppingCartTabState extends State<ShoppingCartTab> {
               largeTitle: Text('Shopping Cart')
             )
           ],
-        )
+        );
       },
     );
   }
