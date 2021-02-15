@@ -36,6 +36,16 @@ class _SearchTabState extends State<SearchTab> {
       _terms = _controller.text;
     });
   }
+  Widget _buildSearchBox() {
+    return Padding(
+      padding: const EdgeInsets.all(8),
+      child: SearchBar(
+        controller: _controller,
+        focusNode: _focusNode,
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final model = Provider.of<AppStateModel>(context);
